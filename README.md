@@ -15,7 +15,7 @@
   - `npm run dev f=file_path.csv date=YYYY-MM-DD` OR `npm run dev date=YYYY/MM/DD` to process all transactions up to the given date
   - `npm run dev f=file_path.csv token=XYZ date=YYYY-MM-DD` to process transactions of a particular token up to the given date
 
-  > Running the commands withouth providing the `f=filepath` argument will default to a file named `transactions.csv` in the root directory of the project.
+  > Running the commands without providing the `f=filepath` argument will default to a file named `transactions.csv` in the root directory of the project.
 
 ## Design Decisions
 
@@ -26,4 +26,3 @@
 - Unit tests were written for each function to ascertain their behavior when their logic is updated. The tests were written before the functions were implemented so as to maintain a good interface.
 
 - Axios is widely used in the JavaScript community for API calls and therefore the API calls in the project were made using axios.
-
