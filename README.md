@@ -1,4 +1,4 @@
-# Simple Node.js Portfolio Tracker
+# Crypto Portfolio Tracker
 
 ## Node version tested
 
