@@ -36,3 +36,5 @@ XRP: TOTAL COINS = 903,332.981, USD VALUE = 548,594.12
 TOTAL TRANSACTIONS:  30,000,000
 duration: 46.546s
 ```
+
+The code was tested on `Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz`
