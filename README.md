@@ -12,10 +12,11 @@
 - Runing
   - `npm run dev f=file_path.csv` to processes all transactions of the `file_path.csv`
   - `npm run dev f=file_path.csv token=XYZ` to process `XYZ` token transactions only, replace `XYZ` with desired coin
-  - `npm run dev f=file_path.csv date=YYYY-MM-DD` OR `npm run dev date=YYYY/MM/DD` to process all transactions up to the given date
+  - `npm run dev f=file_path.csv date=YYYY-MM-DD` OR `... date=YYYY/MM/DD` to process all transactions up to the given date
   - `npm run dev f=file_path.csv token=XYZ date=YYYY-MM-DD` to process transactions of a particular token up to the given date
 
   > Running the commands without providing the `f=filepath` argument will default to a file named `transactions.csv` in the root directory of the project.
+  > The date should be formatted according to *ISO 8601*, that is: YYYY-MM-DD or YYYY/MM/DD
 
 ## Design Decisions
 
