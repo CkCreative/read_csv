@@ -73,14 +73,18 @@ function getArgs() {
     let file_path = "";
     for (let arg of args) {
         const values = arg.split("=");
-        if (values[0].toLocaleLowerCase() == "token") {
-            token = values[1];
-        }
-        if (values[0].toLocaleLowerCase() == "f") {
-            file_path = values[1];
-        }
-        if (values[0].toLocaleLowerCase() == "date") {
-            startDate = Date.parse(values[1]) / 1000;
+        switch (values[0].toLocaleLowerCase()) {
+            case "token":
+                token = values[1];
+                break;
+            case "f":
+                file_path = values[1];
+                break;
+            case "date":
+                startDate = Date.parse(values[1]) / 1000;
+                break;
+            default:
+                break;
         }
     }
     return { token, file_path, startDate };
