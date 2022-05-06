@@ -92,3 +92,25 @@ export async function updateUsdValue(portfolio: PortfolioSummary) {
   }
   return portfolio;
 }
+
+export function getArgs() {
+  const args = process.argv.slice(2);
+  let startDate = 0;
+  let token = "";
+  let file_path = "";
+
+  for (let arg of args) {
+    const values = arg.split("=");
+    if (values[0].toLocaleLowerCase() == "token") {
+      token = values[1];
+    }
+    if (values[0].toLocaleLowerCase() == "f") {
+      file_path = values[1];
+    }
+    if (values[0].toLocaleLowerCase() == "date") {
+      startDate = Date.parse(values[1]) / 1000;
+    }
+  }
+
+  return { token, file_path, startDate };
+}

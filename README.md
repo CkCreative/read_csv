@@ -26,3 +26,13 @@
 - Unit tests were written for each function to ascertain their behavior when their logic is updated. The tests were written before the functions were implemented so as to maintain a good interface.
 
 - Axios is widely used in the JavaScript community for API calls and therefore the API calls in the project were made using axios.
+
+## Results for the test data
+
+```bash
+BTC: TOTAL COINS = 1,200,425.152, USD VALUE = 43,687,384,673.387
+ETH: TOTAL COINS = 901,704.283, USD VALUE = 2,471,382,082.146
+XRP: TOTAL COINS = 903,332.981, USD VALUE = 548,594.12
+TOTAL TRANSACTIONS:  30,000,000
+duration: 46.546s
+```
