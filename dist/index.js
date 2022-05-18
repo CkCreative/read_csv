@@ -6,7 +6,7 @@ let portfolio = {};
 //get provided args
 let { token, file_path, startDate } = (0, utils_1.getArgs)();
 // default file if none is provided
-const filepath = file_path ? file_path : "./transactions.csv";
+const filepath = file_path ? file_path : "./test.csv";
 // initialize transactions stream from file
 const transactions = (0, utils_1.streamTransactionsFromFile)(filepath);
 let currentLine = 0;

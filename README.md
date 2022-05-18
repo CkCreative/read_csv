@@ -4,6 +4,15 @@
 
 - Node.js v16
 
+## Sample data
+
+```csv
+timestamp,transaction_type,token,amount
+1571967208,WITHDRAWAL,BTC,10
+1571967205,DEPOSIT,BTC,10
+1571967200,DEPOSIT,BTC,5
+```
+
 ## Usage
 
 - Install Node.js
@@ -15,7 +24,7 @@
   - `npm run dev f=file_path.csv date=YYYY-MM-DD` OR `... date=YYYY/MM/DD` to process all transactions up to the given date
   - `npm run dev f=file_path.csv token=XYZ date=YYYY-MM-DD` to process transactions of a particular token up to the given date
 
-  > Running the commands without providing the `f=filepath` argument will default to a file named `transactions.csv` in the root directory of the project.
+  > Running the commands without providing the `f=filepath` argument will default to a file named `test.csv` in the root directory of the project.
   > The date should be formatted according to *ISO 8601*, that is: YYYY-MM-DD or YYYY/MM/DD
 
 ## Design Decisions
@@ -31,11 +40,12 @@
 ## Results for the test data
 
 ```bash
-BTC: TOTAL COINS = 1,200,425.152, USD VALUE = 43,687,384,673.387
-ETH: TOTAL COINS = 901,704.283, USD VALUE = 2,471,382,082.146
-XRP: TOTAL COINS = 903,332.981, USD VALUE = 548,594.12
-TOTAL TRANSACTIONS:  30,000,000
-duration: 46.546s
+> read_csv@0.0.1 dev
+> tsc && node ./dist/index.js
+
+BTC: TOTAL COINS = 5, USD VALUE = 148,803.75
+TOTAL TRANSACTIONS:  3
+duration: 1.127s
 ```
 
 The code was tested on `Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz`

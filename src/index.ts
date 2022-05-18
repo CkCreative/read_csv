@@ -14,7 +14,7 @@ let portfolio: PortfolioSummary = {};
 let { token, file_path, startDate } = getArgs();
 
 // default file if none is provided
-const filepath = file_path ? file_path : "./transactions.csv";
+const filepath = file_path ? file_path : "./test.csv";
 
 // initialize transactions stream from file
 const transactions = streamTransactionsFromFile(filepath);
