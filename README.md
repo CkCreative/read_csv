@@ -33,8 +33,6 @@ timestamp,transaction_type,token,amount
 
 - The functions for updating the portfolio are meant to be usable even if the transactions were coming from a network instead of the file system. Therefore, the `updatePorfolio` function takes a transaction and the current portfolio object and returns an updated portfolio object. Similarly, the `updateUsdValue` takes the portfolio object and calculates, for each token in portfolio, the current USD value then returns the updated portfolio object.
 
-- Unit tests were written for each function to ascertain their behavior when their logic is updated. The tests were written before the functions were implemented so as to maintain a good interface.
-
 - Axios is widely used in the JavaScript community for API calls and therefore the API calls in the project were made using axios.
 
 ## Results for the test data
